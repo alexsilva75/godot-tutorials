@@ -1,0 +1,19 @@
+extends Node
+
+@export  var mob_scene = PackedScene
+
+func _on_mob_timer_timeout():
+	var mob_spawn_location = $MobPath/MobSpawnLocation
+	mob_spawn_location.progress = randf()
+	
+	var mob = preload("res://mob.tscn").instantiate()
+	add_child(mob)
+	
+	mob.position = mob_spawn_location.position
+	
+	var direction = mob_spawn_location.rotation + PI / 2
+	direction += randf_range(-PI / 4, PI / 4)
+	mob.rotation = direction
+	
+	var velocity = Vector2(randf_range(mob.min_speed, mob.max_speed),0)
+	mob.linear_velocity = velocity.rotated(direction)
