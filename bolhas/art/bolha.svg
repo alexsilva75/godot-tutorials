@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="129.50792mm"
+   height="129.50792mm"
+   viewBox="0 0 129.50792 129.50792"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="bolha.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.51717104"
+     inkscape:cx="-369.31689"
+     inkscape:cy="24.169954"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.4205,-75.606575)">
+    <g
+       id="g2"
+       transform="translate(-42.46258)">
+      <circle
+         style="opacity:0.67;fill:#00ffff;stroke-width:0.264583"
+         id="path1"
+         cx="139.63704"
+         cy="140.36053"
+         r="64.75396" />
+      <ellipse
+         style="opacity:0.67;fill:#ffffff;stroke-width:0.233846"
+         id="path1-7"
+         cx="142.64156"
+         cy="139.14987"
+         rx="55.890987"
+         ry="58.604141" />
+      <path
+         id="path1-7-9"
+         style="opacity:0.67;fill:#ffffff;stroke-width:0.211835"
+         d="m 99.398648,112.09354 a 50.630266,53.088045 0 0 0 -9.164003,30.27967 50.630266,53.088045 0 0 0 50.629965,53.08807 50.630266,53.088045 0 0 0 43.37309,-25.88398 50.630266,53.088045 0 0 1 -41.46689,22.80982 50.630266,53.088045 0 0 1 -50.630431,-53.08808 50.630266,53.088045 0 0 1 7.258269,-27.2055 z" />
+      <ellipse
+         style="opacity:0.67;fill:#ffffff;stroke-width:0.0519658"
+         id="path1-7-3"
+         cx="159.24045"
+         cy="102.37252"
+         rx="12.420219"
+         ry="13.023143" />
+    </g>
+  </g>
+</svg>
