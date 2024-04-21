@@ -1,7 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://b653uwimq66lr"]
+[gd_scene load_steps=8 format=3 uid="uid://b653uwimq66lr"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_yxbh3"]
 [ext_resource type="PackedScene" uid="uid://j182peesncem" path="res://mob.tscn" id="2_tpt2g"]
+[ext_resource type="PackedScene" uid="uid://b4quws16ltmxy" path="res://player.tscn" id="3_ych74"]
+[ext_resource type="PackedScene" uid="uid://bb6m21ogiqdeu" path="res://hud.tscn" id="4_byydo"]
+[ext_resource type="AudioStream" uid="uid://c2jajoxl87njw" path="res://art/house-in-a-forest-loop.ogg" id="5_624wf"]
+[ext_resource type="AudioStream" uid="uid://3ngsbncggppk" path="res://art/game-over.wav" id="6_0biv8"]
 
 [sub_resource type="Curve2D" id="Curve2D_w0yiw"]
 _data = {
@@ -28,6 +32,25 @@ curve = SubResource("Curve2D_w0yiw")
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
-autostart = true
+
+[node name="Player" parent="." instance=ExtResource("3_ych74")]
+position = Vector2(-160, -80)
+
+[node name="HUD" parent="." instance=ExtResource("4_byydo")]
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_624wf")
+
+[node name="GameOver" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_0biv8")
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="start_game" from="HUD" to="." method="new_game"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]

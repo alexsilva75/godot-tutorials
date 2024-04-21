@@ -24,17 +24,18 @@ func _process(delta):
 	
 	#print(position)
 	position.y -= speed * delta
-	position.x += -h_direction * delta
+	position.x += h_direction * delta
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
 
 
 func _on_timer_timeout():	
-	h_direction *= -h_direction
+	h_direction *= -1
 
 
 func _on_input_event(viewport, event, shape_idx):
+	print(event)
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		print(event)
 		queue_free()

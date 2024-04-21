@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk6dtv73k3vcb"]
+[gd_scene load_steps=3 format=3 uid="uid://bk6dtv73k3vcb"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_svink"]
+[ext_resource type="PackedScene" uid="uid://py5klfa2vpuk" path="res://bolha.tscn" id="2_5wp53"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_svink")
@@ -11,9 +12,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
+
+[node name="Bolha" parent="." instance=ExtResource("2_5wp53")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

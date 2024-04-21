@@ -10,12 +10,12 @@ height = 130.0
 [node name="Bolha" type="Area2D"]
 script = ExtResource("1_1nlfh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_v0vm5")
-
 [node name="Bolha" type="Sprite2D" parent="."]
 scale = Vector2(0.264826, 0.264826)
 texture = ExtResource("1_xmu35")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_v0vm5")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 scale = Vector2(6.45, 6.5)

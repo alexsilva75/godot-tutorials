@@ -45,16 +45,16 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmivw"]
-radius = 47.0
-height = 130.0
+radius = 40.0
+height = 94.0
 
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
-collision_layer = 0
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_8etn5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_ix6xr")
 animation = &"walk"
 
