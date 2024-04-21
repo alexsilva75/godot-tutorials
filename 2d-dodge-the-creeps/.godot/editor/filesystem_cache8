@@ -1,8 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713033073
-default_env.tres::Environment::-1::1713033052::0::1::::<><>::
+::res://::1713712441
+default_env.tres::Environment::8761466029388344808::1713044716::0::1::::<><>::
 icon.png::CompressedTexture2D::1752843517566452969::1617655860::1713033073::1::::<><>::
-::res://art/::1617919176
+main.gd::GDScript::-1::1713044703::0::1::::<>Node<>::
+main.tscn::PackedScene::4625943129209456763::1713044716::0::1::::<><>::res://main.gd<>uid://j182peesncem::::res://mob.tscn
+Mob.gd::GDScript::-1::1713042361::0::1::::<>RigidBody2D<>::
+mob.tscn::PackedScene::687426085780350116::1713044715::0::1::::<><>::res://Mob.gd<>uid://cfx6w6exnqg42::::res://art/enemy-flying-1.png<>uid://ik6gt2sbwybj::::res://art/enemy-flying-2.png<>uid://do0yndjfhghvq::::res://art/enemy-swimming-1.png<>uid://cxqiac7dwshjt::::res://art/enemy-swimming-2.png<>uid://dlxffk8hcarcm::::res://art/enemy-walking-1.png<>uid://baevayuxh8pbo::::res://art/enemy-walking-2.png
+player.gd::GDScript::-1::1713039491::0::1::::<>Area2D<>::
+player.tscn::PackedScene::4456181807591410302::1713044715::0::1::::<><>::res://player.gd<>uid://dr4foneg7to0c::::res://art/player-walk-1.png<>uid://d0i3f1y186mgc::::res://art/player-walk-2.png<>uid://bsmiqold4j4vu::::res://art/player-up-1.png<>uid://d07jmgcjo6eag::::res://art/player-up-2.png
+::res://art/::1713033074
 enemy-flying-1.png::CompressedTexture2D::5173189423627503037::1510184330::1713033073::1::::<><>::
 enemy-flying-2.png::CompressedTexture2D::584048508657485003::1510184340::1713033073::1::::<><>::
 enemy-swimming-1.png::CompressedTexture2D::8194995900720476022::1510183525::1713033073::1::::<><>::
@@ -15,7 +21,7 @@ player-up-1.png::CompressedTexture2D::3675107463366209930::1510184435::171303307
 player-up-2.png::CompressedTexture2D::8980611431280342798::1510184444::1713033073::1::::<><>::
 player-walk-1.png::CompressedTexture2D::8412668623170996708::1510184510::1713033073::1::::<><>::
 player-walk-2.png::CompressedTexture2D::8932208572738638790::1510184520::1713033073::1::::<><>::
-::res://fonts/::1617890707
+::res://fonts/::1713033073
 FONTLOG.txt::TextFile::-1::1503176804::0::1::::<><>::
 LICENSE.txt::TextFile::-1::1503176804::0::1::::<><>::
 xolonium-regular.ttf::FontFile::3931640709245118170::1503176804::1713033073::1::::<><>::
